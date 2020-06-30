@@ -75,8 +75,8 @@ class ABB{
 		}
 	}
 	private int buscaMayorMenores(NodoABB raiz){
-		while(raiz.der!=null){
-				raiz=raiz.der;
+		while(raiz.hDer!=null){
+				raiz=raiz.hDer;
 		}
 		return raiz.dato;
 
