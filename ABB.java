@@ -31,14 +31,15 @@ class ABB{
 	}
 	public void preorden(){
 		if(raiz!=null){
-			System.out.println(raiz.dato);
+			System.out.print(raiz.dato + "-");
 			preorden(raiz.hIzq);
 			preorden(raiz.hDer);
 		}
+		System.out.println("");
 	}
 	private void preorden(NodoABB raiz){
 		if(raiz!=null){
-			System.out.println(raiz.dato);
+			System.out.print(raiz.dato + "-");
 			preorden(raiz.hIzq);
 			preorden(raiz.hDer);
 		}
@@ -46,23 +47,35 @@ class ABB{
 	public void inorden(){
 		if(raiz!=null){
 			inorden(raiz.hIzq);
-			System.out.println(raiz.dato);
+			System.out.print(raiz.dato + "-");
 			inorden(raiz.hDer);
 		}
+		System.out.println("");
 	}
 	private void inorden(NodoABB raiz){
 		if(raiz!=null){
 			inorden(raiz.hIzq);
-			System.out.println(raiz.dato);
+			System.out.print(raiz.dato + "-");
 			inorden(raiz.hDer);
 		}
 	}
 
 	public void postorden(){
+		if(raiz!=null){
+			postorden(raiz.hIzq);
+			postorden(raiz.hDer);
+			System.out.print(raiz.dato + "-");
 
+		}
+		System.out.println("");
 	}
 	private void postorden(NodoABB raiz){
+		if(raiz!=null){
+			postorden(raiz.hIzq);
+			postorden(raiz.hDer);
+			System.out.print(raiz.dato + "-");
 
+		}
 	}
 
 	public boolean buscar(int x){

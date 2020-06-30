@@ -11,6 +11,8 @@ class AppABB{
 		//System.out.println("hijo derecho "+a.raiz.hDer.dato);
 		//System.out.println("hijo izquierdo del hijo izquierdo "+a.raiz.hIzq.hIzq.dato);
 		a.preorden();
+		a.inorden();
+		a.postorden();
 		int dato=0;
 		if(a.buscar(dato))
 			System.out.println("El número "+dato+ " si existe en el árbol");
