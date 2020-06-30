@@ -74,4 +74,13 @@ class ABB{
 			}
 		}
 	}
+	private int buscaMayorMenores(NodoABB raiz){
+
+	}
+	public void eliminar(int x){
+
+	}
+	private NodoABB eliminar(int x, NodoABB raiz){
+		
+	}
 }
