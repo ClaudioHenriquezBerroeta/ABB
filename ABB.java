@@ -43,6 +43,27 @@ class ABB{
 			preorden(raiz.hDer);
 		}
 	}
+	public void inorden(){
+		if(raiz!=null){
+			inorden(raiz.hIzq);
+			System.out.println(raiz.dato);
+			inorden(raiz.hDer);
+		}
+	}
+	private void inorden(NodoABB raiz){
+		if(raiz!=null){
+			inorden(raiz.hIzq);
+			System.out.println(raiz.dato);
+			inorden(raiz.hDer);
+		}
+	}
+
+	public void postorden(){
+
+	}
+	private void postorden(NodoABB raiz){
+
+	}
 
 	public boolean buscar(int x){
 		if(raiz==null){
